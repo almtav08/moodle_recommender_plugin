@@ -26,6 +26,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_logevent_api';
 $plugin->release = 'logevent_api-0.1.0';
-$plugin->version = 2024060600;
+$plugin->version = 2024062800.04;
 $plugin->requires = 2022061700.00;
 $plugin->maturity = MATURITY_ALPHA;
