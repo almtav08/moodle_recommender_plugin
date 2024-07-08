@@ -31,5 +31,12 @@ $functions = [
         'description' => 'Obtain course logs from the Moodle database.',
         'type' => 'read',
         'ajax' => true,
+    ],
+    'local_logevent_api_getunformattedcoursecontent' => [
+        'classname' => 'local_logevent_api\external\get_unformatted_course_content',
+        'methodname' => 'execute',
+        'description' => 'Obtain unformatted course content from the Moodle database.',
+        'type' => 'read',
+        'ajax' => true,
     ]
 ];
