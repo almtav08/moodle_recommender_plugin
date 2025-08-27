@@ -28,5 +28,9 @@ $observers = array(
     array(
         'eventname' => '\core\event\course_module_viewed',
         'callback' => 'local_logevent_api_observer::user_course_resource_viewed',
-    )
+    ),
+    array(
+        'eventname'   => '\mod_quiz\event\attempt_submitted',
+        'callback'    => 'local_logevent_api_observer::quiz_attempt_submitted',
+    ),
 );
