@@ -65,6 +65,7 @@ class get_unformatted_course_content extends \core_external\external_api {
         foreach ($modules_list as $module) {
             $course_module = get_coursemodule_from_id($module->modulename, $module->cmid, $courseid, false, MUST_EXIST);
             $module->name = $course_module->name;
+            $module->instance = $course_module->instance;
         }
 
         return $modules_list;
