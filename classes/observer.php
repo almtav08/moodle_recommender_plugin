@@ -99,9 +99,12 @@ class local_events_handling_observer {
         }
 
         $url = rtrim($baseurl) . '/append_log';
+        $token = get_config('local_logevent_api', 'config_key');
+        $authorization = 'Authorization: Bearer ' . $token;
         $json_data = json_encode($data_to_send);
 
         $curl = curl_init($url);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json' , $authorization ));
         curl_setopt($curl, CURLOPT_POST, true);
         curl_setopt($curl, CURLOPT_POSTFIELDS, $json_data);
         curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));

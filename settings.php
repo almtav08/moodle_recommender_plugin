@@ -38,4 +38,9 @@ if ($hassiteconfig) {
         new lang_string('ipaddress', 'local_logevent_api'),
         new lang_string('ipaddress_desc', 'local_logevent_api'), 'http://127.0.0.1:8080', PARAM_TEXT);
     $settings->add($setting);
+
+    $setting = new admin_setting_configtext('local_logevent_api/config_key',
+        new lang_string('key', 'local_logevent_api'),
+        new lang_string('key_desc', 'local_logevent_api'), "API KEY", PARAM_TEXT);
+    $settings->add($setting);
 }

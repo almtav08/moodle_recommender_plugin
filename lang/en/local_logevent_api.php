@@ -27,3 +27,5 @@ defined('MOODLE_INTERNAL') || die();
 $string['pluginname'] = 'logevent api';
 $string['ipaddress'] = 'Recommender server IP address';
 $string['ipaddress_desc'] = 'The IP address of the recommender server.';
+$string['key'] = 'Recommender key';
+$string['key_desc'] = 'The key to access the recommender server.';
